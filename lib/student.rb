@@ -68,7 +68,7 @@ end
     query = <<-SQL
       UPDATE students SET name=?, grade=? WHERE id=?
     SQL
-    DB[:conn].execute(query,self.name,self.grade)
+    DB[:conn].execute(query,self.name,self.grade,self.id)
   end
 
 
